@@ -281,34 +281,33 @@
                   <div class="conteiner">
                       <h2 class="customers-title">Постоянные клиенты</h2>
                       <ul class="customers-list">
-                          <li class="customer-item"> <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo1"></use>
                               </svg>
                           </a></li>
-                          <li class="customer-item"> <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo2"></use>
                               </svg>
                           </a></li>
-                          <li class="customer-item"> 
-                              <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo3"></use>
                               </svg>
                               </a>
                           </li>
-                          <li class="customer-item"> <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo4"></use>
                               </svg>
                           </a></li>
-                          <li class="customer-item"> <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo5"></use>
                               </svg>
                           </a></li>
-                          <li class="customer-item"> <a href="" class=customers-link>
+                          <li class="customer-item"> <a href="" class="customers-link">
                               <svg width="106" height="60" class="customers-icon">
                                   <use href="./images/symbol-defs.svg#icon-Logo6"></use>
                               </svg>
@@ -387,7 +386,7 @@
                         </div>
                         <button type="submit" class="footer-button">Подписаться
                         <svg class="footer-signup-arrow" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                         </button>
                     </form>
@@ -401,6 +400,54 @@
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </div>
+                <p class="form-tittle">Оставьте свои данные, мы вам перезвоним</p>
+                <form>
+                    <div class="modal-field">
+                        <Label class="modal-label" for="name">Имя</Label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" id="name" type="name" name="name" />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <Label class="modal-label" for="tel">Телефон</Label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" id="tel" type="tel" name="tel" />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <Label class="modal-label" for="email">Почта</Label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" id="email" type="email" name="email" />
+                            <svg class="input-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field-comment">
+                        <label class="modal-label" for="comment">Комментарий</label> 
+                        <textarea class="form-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="modal-field-checkbox">
+                        <input type="checkbox" class="input-checkbox visually-hidden" id="input-checkbox" name="consent-checkbox" value="consent-checkbox"/>
+                        <label class="modal-label-checkbox" for="input-checkbox">
+                            <span class="checkbox-icon-wrap">
+                                <svg class="checkbox-icon" width="11" height="8">
+                                    <use href="./images/symbol-defs.svg#icon-tickk"></use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю <span class="checkbox-color"> Условия договора</span> 
+                        </label>    
+                    </div>
+                    <div class="modal-field-button">
+                        <button class="modal-button" type="submit">Отправить</button>
+                    </div>
+                </form>
             </div>
         </div>  
         <script src="./js/modal.js"></script>
