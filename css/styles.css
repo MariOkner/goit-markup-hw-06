@@ -60,7 +60,7 @@ img {
     top: 0;
     width: 100%;
     min-height: 80px; */
-    background-color: #FFFFFF;
+    background-color: var(--secondary-text-color);
     
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -305,7 +305,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 
 .work-top-title, .team-top-title, .customers-title{
@@ -558,12 +558,10 @@ img {
     border-radius: 4px;
       
     background-color: transparent;
-    color: #ffffff;
+    color: var(--secondary-text-color);
 }
 
 .footer-email input::placeholder {
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     
@@ -582,30 +580,24 @@ img {
 
     cursor: pointer;
 
-    /* font-family: 'Roboto';
-    font-style: normal; */
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
+    letter-spacing: 0.06em;
         
     display: flex;
     justify-content: center;
-    
     align-items: center;
-    letter-spacing: 0.06em;
-    
+        
     color: #FFFFFF;
     border: transparent;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;   
 }
 
 .footer-signup-arrow {
     margin-left: 10px;
-
-    /* display: flex;
-    align-items: center; */
 }
 
 /*------------------------------------Styles page portfolio------------------------------------*/
@@ -697,8 +689,8 @@ img {
     padding-bottom: 24px;
     height: 100%;
 
-    background-color: rgba(33, 150, 243, 0.9);;
-    color: #FFFFFF;   
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--secondary-text-color);   
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     transform: translateY(100%);
@@ -754,7 +746,7 @@ img {
     width: 528px;
     min-height: 581px;
     padding: 40px;
-    background-color: #ffffff;
+    background-color: var(--secondary-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -814,7 +806,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--title-text-color);
 
     margin-bottom: 12px;
 }
@@ -829,7 +821,7 @@ img {
     line-height: 14px;
     letter-spacing: 0.01em;
 
-    color: #757575;
+    color: var(--main-text-color);
 
     display: block;
     margin-bottom: 4px;
@@ -904,7 +896,7 @@ img {
 .modal-label-checkbox .checkbox-icon-wrap{
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
+    border: 2px solid var(--title-text-color);
     border-radius: 2px;
     margin-right: 8px;
 
@@ -966,7 +958,7 @@ img {
     padding: 10px 55px;
 
     color: var(--secondary-text-color);
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
