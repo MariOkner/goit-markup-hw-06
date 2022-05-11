@@ -732,14 +732,15 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
 
     /* центрування молального вікна, якщо один елеменнт, як у нас (як один із варіантів) */
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
-    transition-property: opacity, visibility;
-    transition-duration: 250ms, 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms, 0ms;  
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0) translateX(10000px);
 }
 
 .modal {
@@ -753,19 +754,15 @@ img {
     border-radius: 4px;
 
 /*  центрування молального вікна */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
-}
-
-.backdrop.is-hidden .modal {
-    transform: rotate(180deg);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.25) translateX(0px);
+    
+    
 }
 
 .modal-close-btn {
@@ -870,6 +867,8 @@ img {
     resize: none;
 
     padding: 12px 16px;
+
+    display: block;
 }
 
 .form-comment::placeholder {
@@ -880,17 +879,25 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.form-comment:focus {
+    border: 1px solid #2196F3;
+}
+
 /* _______checkbox_______ */
 
+.modal-field-checkbox {
+    margin-bottom: 30px;
+}
 
 .modal-label-checkbox {
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-
-    margin-bottom: 30px;
+    margin-bottom: 0;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
  
 .modal-label-checkbox .checkbox-icon-wrap{
